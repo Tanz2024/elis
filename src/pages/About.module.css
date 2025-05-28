@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Pacifico&display=swap');
+
+/* === Base Styles === */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff9f7;
+  color: #5b2018;
+  overflow-x: hidden;
+}
+
+/* === Animation === */
+.fadeIn {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fadeIn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Section Wrappers === */
+.about {
+  padding: 0 1.5rem 4rem;
+  position: relative;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+/* === Profile Section === */
+.profileSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+.imageBox {
+  flex: 1;
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.profileImage {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+/* === Bio Box === */
+.bioBox {
+  flex: 2;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.aboutTitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.aboutText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* === Dark Section === */
+.sectionDark {
+  background-color: #5b2018;
+  color: #fff;
+  padding: 3.5rem 1.5rem;
+  margin: 3rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.sectionDark .sectionTitle {
+  color: #fff;
+}
+
+/* === Experience List === */
+.listSection {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding-left: 1rem;
+  border-left: 3px solid #fff;
+}
+
+.listSection div {
+  position: relative;
+  padding-left: 1.5rem;
+}
+.listSection div::before {
+  content: '❯';
+  position: absolute;
+  left: -1.2rem;
+  top: 0.4rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.listSection p {
+  margin: 0;
+  font-weight: 700;
+}
+.listSection span {
+  font-size: 0.95rem;
+  color: #e5d4cf;
+}
+
+/* === Hobbies & Work === */
+.sectionSplit,
+.hobbySection {
+  padding: 3rem 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* === Image Grid === */
+.hobbyImages,
+.workImages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.hobbyImages img,
+.workImages img {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.hobbyImages img:hover,
+.workImages img:hover {
+  transform: scale(1.05);
+}
+
+/* === Hobby Text === */
+.hobbyText {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  text-align: center;
+  color: #5b2018;
+}
+
+/* === Work Experience Cards === */
+.workCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 180px;
+  text-align: center;
+}
+
+.workTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.workPlace {
+  font-size: 0.9rem;
+  color: #5b2018;
+}
+
+.workYear {
+  font-size: 0.85rem;
+  color: #a17a70;
+  font-style: italic;
+}
+
+.dot {
+  color: #8b3d2b;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .profileSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutTitle {
+    font-size: 2.1rem;
+  }
+
+  .aboutText {
+    font-size: 1rem;
+  }
+
+  .hobbyImages img,
+  .workImages img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .listSection {
+    padding-left: 0.8rem;
+  }
+
+  .listSection div::before {
+    left: -1rem;
+  }
+
+  .workCard {
+    max-width: 150px;
+  }
+}

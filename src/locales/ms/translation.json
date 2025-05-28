@@ -1,0 +1,58 @@
+{
+    "header": {
+      "home": "Laman Utama",
+      "about": "Tentang",
+      "project": "Projek",
+      "contact": "Hubungi"
+    },
+    "home": {
+        "brand": "ELIS ZAINAL",
+        "subtitle": "Pemasaran Digital Web dan Pencipta Kandungan Anda",
+        "explore": "Terokai Lagi",
+        "whatIDo": "Apa Saya Lakukan",
+        "mySkills": "Kemahiran Saya",
+        "contact": "Hubungi",
+        "levels": {
+            "beginner": "Pemula",
+            "intermediate": "Pertengahan",
+            "advanced": "Lanjutan"
+          }
+        },
+    "about": {
+      "title": "Tentang Saya",
+      "bio": "Saya Elis, pelajar Diploma dalam Teknologi Komunikasi Media Digital di UiTM Alor Gajah, Melaka. Saya pakar dalam pemasaran media sosial, penciptaan kandungan dan strategi digital.",
+      "education": "Pendidikan Saya",
+      "diploma": "Diploma Teknologi Komunikasi Media Digital",
+      "spm": "SPM - SMK Kamil, Kelantan",
+      "hobby": "Hobi Saya",
+      "hobbyText": "Di luar bidang digital, saya gemar membakar kek. Ia mengajar saya kreativiti, kesabaran dan perhatian terhadap perincian.",
+      "work": "Pengalaman Kerja",
+      "work1": "Guru Pembantu di TASKA BONDA MAMA MUTIARA HATI (2024)",
+      "work2": "Pembantu Jualan di KEDAI MAKAN CHE YAH (2023)",
+      "extra": "Aktiviti Kokurikulum",
+      "extra1": "JPB, EXCO Kesenian & Kebudayaan - UiTM Alor Gajah (2024)",
+      "extra2": "Ahli Biro Rekabentuk PixelFest - UiTM Lendu (2025)",
+      "extra3": "Biro Kebajikan - Asrama SMK Kamil (2022)"
+    },
+    "project": {
+        "quote": {
+            "line1": "Sepanjang perjalanan saya dalam media digital dan pemasaran, saya telah menyumbang kepada",
+"line2": "pelbagai projek kreatif dan promosi. Setiap pengalaman telah mengukuhkan",
+                "line3": "kemahiran saya dalam penciptaan kandungan, penjenamaan, dan strategi media sosial"
+        },
+        "sections": {
+          "ae": "Adobe After Effects",
+          "ps": "Adobe Photoshop",
+          "canva": "Canva",
+          "unreal": "Unreal Engine",
+        "video": "Video Demo Projek"
+
+        }
+    },
+    "contact": {
+      "title": "Hubungi",
+      "email": "eliszainall@gmail.com"
+    },
+    "footer": "Hak cipta terpelihara."
+  }
+  

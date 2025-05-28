@@ -1,0 +1,59 @@
+{
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "project": "Project",
+      "contact": "Contact"
+    },
+    "home": {
+      "brand": "ELIS ZAINAL",
+      "subtitle": "Your Web Digital Marketing and Content Creator",
+      "explore": "Explore More",
+      "whatIDo": "What I Do",
+      "mySkills": "My Skills",
+      "contact": "Contact",
+      "levels": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+      }
+    },
+"about": {
+  "title": "About Me",
+  "bio": "I'm Elis, a Diploma student in Digital Media Communication Technology (MC112) at UiTM Alor Gajah, Melaka. I specialize in social media marketing, content creation, and digital strategy.",
+  "education": "My Education",
+  "diploma": "Diploma in Digital Media Communication Technology",
+  "spm": "SPM – SMK Kamil, Kelantan",
+  "hobby": "My Hobby",
+  "hobbyText": "Outside of my digital work, I enjoy baking. It has taught me creativity, patience, and attention to detail.",
+  "work": "Work Experience",
+  "work1": "Assistant Teacher  TASKA BONDA MAMA MUTIARA HATI (2024)",
+  "work2": "Sales Assistant  KEDAI MAKAN CHE YAH (2023)",
+  "extra": "Extracurricular Activities",
+  "extra1": "JPB, EXCO of Arts & Culture – UiTM Alor Gajah (2024)",
+  "extra2": "PixelFest Design Committee – UiTM Lendu (2025)",
+  "extra3": "Welfare Bureau – SMK Kamil Hostel (2022)"
+},
+
+
+    "project": {
+        "quote": {
+          "line1": " Throughout my journey in digital media and marketing, I have contributed to",
+          "line2": "various creative and promotional projects. Each experience has strengthened",
+          "line3": "my skills in content creation, branding, and social media strategy"
+        },
+        "sections": {
+          "ae": "Adobe After Effects",
+          "ps": "Adobe Photoshop",
+          "canva": "Canva",
+          "unreal": "Unreal Engine",
+          "video": "Project Demo Video"
+        }
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "eliszainall@gmail.com"
+    },
+    "footer": "All rights reserved."
+  }
+  

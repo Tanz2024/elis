@@ -1,0 +1,49 @@
+/* === App.css – Global layout for ELISZAINAL === */
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fef9f7;
+  color: #5b2018;
+  font-family: 'Georgia', serif;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* === Fade-in Animation on Page Load === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional UX tweaks */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,43 @@
+.contact {
+    background-color: #fff9f7;
+    color: #5b2018;
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  
+  .name {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    margin-bottom: 1rem;
+  }
+  
+  .name span {
+    display: block;
+  }
+  
+  .email {
+    font-size: 1rem;
+    color: #5b2018;
+    letter-spacing: 0.05em;
+  }
+  .fadeIn {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fadeIn.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

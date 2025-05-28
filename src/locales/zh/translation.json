@@ -1,0 +1,57 @@
+{
+    "header": {
+      "home": "主页",
+      "about": "关于我",
+      "project": "项目",
+      "contact": "联系"
+    },
+    "home": {
+      "brand": "ELIS ZAINAL",
+      "subtitle": "您的网站数字营销与内容创作者",
+      "explore": "探索更多",
+      "whatIDo": "我在做什么",
+      "mySkills": "我的技能",
+      "contact": "联系",
+      "levels": {
+        "beginner": "初学者",
+        "intermediate": "中级",
+        "advanced": "高级"
+      }
+    },
+    "about": {
+      "title": "关于我",
+      "bio": "我是Elis，就读于马六甲UiTM Alor Gajah的数字媒体传播技术（MC112）专业。我专注于社交媒体营销、内容创作和数字战略。",
+      "education": "我的教育背景",
+      "diploma": "数字媒体传播技术文凭",
+      "spm": "SPM - 吉兰丹SMK Kamil",
+      "hobby": "我的爱好",
+      "hobbyText": "除了数字工作之外，我喜欢烘焙。它教会了我创造力、耐心和对细节的关注。",
+      "work": "工作经验",
+      "work1": "助教 - TASKA BONDA MAMA MUTIARA HATI (2024)",
+      "work2": "销售助理 - KEDAI MAKAN CHE YAH (2023)",
+      "extra": "课外活动",
+      "extra1": "JPB，艺术与文化委员会 - UiTM Alor Gajah (2024)",
+      "extra2": "PixelFest 设计小组 - UiTM Lendu (2025)",
+      "extra3": "福利局 - SMK Kamil 宿舍 (2022)"
+    },
+    "project": {
+      "quote": {
+        "line1": "在我的数字媒体与营销旅程中，我曾参与多个",
+        "line2": "创意与宣传项目。每一次经历都增强了我在",
+        "line3": "内容创作、品牌建设和社交媒体策略方面的能力"
+      },
+      "sections": {
+        "ae": "Adobe After Effects",
+        "ps": "Adobe Photoshop",
+        "canva": "Canva",
+        "unreal": "Unreal Engine",
+        "video": "项目演示视频"
+      }
+    },
+    "contact": {
+      "title": "联系",
+      "email": "eliszainall@gmail.com"
+    },
+    "footer": "版权所有。"
+  }
+  

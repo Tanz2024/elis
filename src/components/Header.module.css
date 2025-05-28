@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #5b2018;
+  padding: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.headerContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.logoSpan {
+  color: #ffffff;
+}
+
+.logoSpanAlt {
+  color: #f5e2dc;
+  animation: pulseAlt 2.5s infinite;
+}
+
+@keyframes pulseAlt {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navLink:hover,
+.navLink:focus,
+.navLink:active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.barOpen1 {
+  transform: rotate(45deg) translateY(8px);
+}
+.barOpen2 {
+  opacity: 0;
+}
+.barOpen3 {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+.navMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #5b2018;
+  padding: 2rem 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.navMobile.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .navMobile .navLink {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+  }
+}

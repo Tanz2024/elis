@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* === Root Layout === */
+.project {
+  font-family: 'Inter', sans-serif;
+  padding: 4rem 1rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #5b2018;
+}
+
+/* === Fade-In Animation === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.visible {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* === Quote Section (Always White) === */
+.fullWhite {
+  background-color: #ffffff;
+  color: #5b2018;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.quote {
+  font-family: 'Georgia', serif;
+  font-size: 1.25rem;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  white-space: pre-line;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* === Section Themes === */
+.sectionWhite,
+.sectionDark {
+  padding: 4rem 1rem;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.sectionWhite {
+  background-color: #ffffff;
+  color: #5b2018;
+}
+
+.sectionDark {
+  background-color: #662721;
+  color: #ffffff;
+}
+
+/* === Section Title === */
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+}
+
+/* === Grid Layout === */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+/* === Card Styles === */
+.cardImage,
+.cardVideo {
+  width: 260px;
+  height: auto;
+  border-radius: 14px;
+  background-color: #000;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardImage:hover,
+.cardVideo:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* Stronger hover on dark background */
+.sectionDark .cardImage:hover,
+.sectionDark .cardVideo:hover {
+  box-shadow: 0 12px 32px rgba(255, 255, 255, 0.25);
+}
+
+/* === Video Wrapper === */
+.cardVideoWrapper {
+  position: relative;
+  max-width: 260px;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #000;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* === Mute Button === */
+.muteButton {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease;
+}
+
+.muteButton:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* === Full Width Video (Optional) === */
+.fullVideo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  background-color: #000;
+}
+
+/* === Responsive Iframe === */
+.iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 1024px) {
+  .cardImage,
+  .cardVideo {
+    width: 200px;
+  }
+
+  .sectionTitle {
+    font-size: 1.9rem;
+  }
+
+  .quote {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardImage,
+  .cardVideo {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .muteButton {
+    bottom: 8px;
+    right: 8px;
+    padding: 3px;
+  }
+
+  .project {
+    padding: 2rem 1rem;
+  }
+
+  .sectionWhite,
+  .sectionDark {
+    padding: 2.5rem 1rem;
+  }
+}

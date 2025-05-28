@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* === Footer Wrapper === */
+.footer {
+  background-color: #5b2018;
+  color: #ffffff;
+  padding: 2.5rem 1rem 1rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+/* === Social Icons === */
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.icon {
+  font-size: 1.6rem;
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #ffccbc;
+}
+
+/* === Language Switcher === */
+.languageSwitch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.languageSwitch button {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.languageSwitch button:hover {
+  background-color: #ffffff;
+  color: #5b2018;
+}
+
+/* === Bottom Text === */
+.bottomText {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  line-height: 1.5;
+  margin-top: 1.2rem;
+}
+
+/* === Floating Scroll to Top Button === */
+.scrollButton {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 2000;
+}
+
+.scrollButton:hover {
+  background-color: #ffffff;
+  color: #5b2018;
+  transform: translateY(-4px);
+}
+
+/* === Mobile Optimization === */
+@media (max-width: 480px) {
+  .languageSwitch {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .iconContainer {
+    gap: 1rem;
+  }
+
+  .scrollButton {
+    right: 1rem;
+    bottom: 1.2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
