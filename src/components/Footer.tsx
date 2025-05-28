@@ -19,8 +19,7 @@ const Footer = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 300) setVisible(true);
-      else setVisible(false);
+      setVisible(window.scrollY > 300);
     };
     window.addEventListener('scroll', toggleVisibility);
     return () => window.removeEventListener('scroll', toggleVisibility);
@@ -30,10 +29,10 @@ const Footer = () => {
     <>
       <footer className={styles.footer}>
         <div className={styles.iconContainer}>
-          <a href="eliszainall@gmail.com" className={styles.icon} aria-label="Email" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:eliszainall@gmail.com" className={styles.icon} aria-label="Email" target="_blank" rel="noopener noreferrer">
             <FaEnvelope />
           </a>
-          <a href="linkedin.com/in/elis-zainal-99ba14364" className={styles.icon} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/elis-zainal-99ba14364" className={styles.icon} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
         </div>
