@@ -31,18 +31,7 @@ const useFadeIn = () => {
 
 const Home = () => {
   const { t } = useTranslation();
-  const [activeSkill, setActiveSkill] = useState<number | null>(null);
   const skillRefs = useRef<Array<HTMLDivElement | null>>([]);
-
-  const handleSkillClick = (index: number) => {
-    if (activeSkill === index) {
-      setActiveSkill(null);
-      setTimeout(() => setActiveSkill(index), 10); // re-trigger animation
-    } else {
-      setActiveSkill(index);
-    }
-    skillRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  };
 
   // Refs for fade-in animations
   const hero = useFadeIn();
@@ -113,8 +102,7 @@ const Home = () => {
             <div
               key={idx}
               ref={(el) => (skillRefs.current[idx] = el)}
-              className={`${styles.skillRow} ${activeSkill === idx ? styles.skillRowActive : ''}`}
-              onClick={() => handleSkillClick(idx)}
+              className={styles.skillRow}
             >
               <div className={styles.skillLabel}>
                 <div className={styles.skillLeft}>
@@ -123,18 +111,15 @@ const Home = () => {
                     {skill.name} ({t(`home.levels.${skill.level}`)})
                   </span>
                 </div>
-                {activeSkill === idx && (
-                  <div className={styles.skillPercent} title={`${skill.percent}%`}>
-                    {skill.percent}%
-                  </div>
-                )}
+                <div className={styles.skillPercent} title={`${skill.percent}%`}>
+                  {skill.percent}%
+                </div>
               </div>
               <div className={styles.progressBackground}>
                 <div
-                  key={activeSkill === idx ? `active-${idx}` : `inactive-${idx}`}
                   className={styles.progressFill}
                   style={{
-                    width: activeSkill === idx ? `${skill.percent}%` : '0%',
+                    width: `${skill.percent}%`,
                     backgroundColor: skill.color,
                   }}
                 />
